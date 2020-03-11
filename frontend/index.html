@@ -29,7 +29,7 @@
             <form name="donor">
                 <input 
                 type="text" 
-                name="name" 
+                name="name_donor" 
                 id="name" 
                 placeholder="Nome Completo"
                 maxlength="30"
@@ -44,7 +44,7 @@
                 placeholder="Idade"
                 min="16"
                 max="69"
-                oninvalid="setCustomValidity('informe uma data válida entre 16 e 69 anos')"
+                oninvalid="setCustomValidity('informe uma idade válida entre 16 e 69 anos')"
                 onchange="try{setCustomValidity('')}catch(e){}"
                 >
     
@@ -56,7 +56,7 @@
                 oninvalid="setCustomValidity('email inválido')"
                 onchange="try{setCustomValidity('')}catch(e){}">
 
-                <select name="tipo_sangue" id="tipo_sangue">
+                <select name="type_blood" id="tipo_sangue">
                     <option value="">Selecione o tipo sanguíneo</option>
                     <option value="A+">A+</option>
                     <option value="A-">A-</option>
@@ -73,24 +73,10 @@
     <main>
         <h1>Ultimos doadores</h1>
         <section class="donors">
-                <div class="donor">
+                <!-- <div class="donor">
                     <div id="type_blood">A-</div>
-                    <span id="id_donor">Diego Alves </span>
-                </div>
-                <div class="donor">
-                    <div id="type_blood">O-</div>
-                    <span id="id_donor">Gilliard Oliveira de Souza </span>
-                </div>
-                <div class="donor">
-                    <div id="type_blood">A+</div>
-                    <span id="id_donor">Mikael Oliveira </span>
-                </div>
-                <div class="donor">
-                    <div id="type_blood">O+</div>
-                    <span id="id_donor">Kaiki Brito </span>
-                </div>
-               
-               
+                    <span id="name_donor">Diego Alves </span>
+                </div> -->    
         </section>
     </main>
     <footer>Com amor Foguetinho 😘</footer>
